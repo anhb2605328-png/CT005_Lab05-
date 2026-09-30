@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giới thiệu bản thân - Phước Anh</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef4ff, #f8fbff);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            border-left: 5px solid #7c3aed;
+            padding-left: 12px;
+        }
+
+        /* THÔNG TIN */
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            background: #f5f8ff;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        /* ẢNH */
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .note {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #6b7280;
+            background: #f3f4f6;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        /* PDF */
+        .pdf-box {
+            text-align: center;
+        }
+
+        .pdf-box iframe {
+            width: 100%;
+            height: 650px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        /* VIDEO */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* NGUỒN */
+        .source-list {
+            padding-left: 20px;
+        }
+
+        .source-list li {
+            margin-bottom: 10px;
+        }
+
+        .source-list a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .pdf-box iframe {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- PHẦN GIỚI THIỆU -->
+    <!-- ============================= -->
+
+    <header>
+        <div class="container">
+            <h1>Xin chào, tôi là Phước Anh 👋</h1>
+
+            <p>
+                Sinh viên ngành Truyền thông đa phương tiện
+            </p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- THÔNG TIN CÁ NHÂN -->
+        <section class="card">
+
+            <h2>👤 Thông tin cá nhân</h2>
+
+            <div class="info">
+
+                <div class="info-item">
+                    <strong>Họ và tên</strong>
+                    Phước Anh
+                </div>
+
+                <div class="info-item">
+                    <strong>MSSV</strong>
+                    B2605328
+                </div>
+
+                <div class="info-item">
+                    <strong>Năm học</strong>
+                    2026
+                </div>
+
+                <div class="info-item">
+                    <strong>Ngành học</strong>
+                    Truyền thông đa phương tiện
+                </div>
+
+                <div class="info-item">
+                    <strong>Khóa</strong>
+                    52
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GIỚI THIỆU BẢN THÂN -->
+        <section class="card">
+
+            <h2>🌟 Giới thiệu</h2>
+
+            <p>
+                Xin chào! Mình là <strong>Phước Anh</strong>, sinh viên
+                <strong>ngành Truyền thông đa phương tiện</strong>, khóa 52.
+            </p>
+
+            <br>
+
+            <p>
+                Mình quan tâm đến công nghệ, truyền thông số, thiết kế,
+                sáng tạo nội dung và những ứng dụng mới của trí tuệ nhân tạo
+                trong lĩnh vực truyền thông đa phương tiện.
+            </p>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- ẢNH PNG -->
+        <!-- ============================= -->
+
+        <section class="card">
+
+           
+            <div class="image-box">
+
+                             <img
+                    src="Lab05_Ex2.1 (1).png"
+                    alt="CN"
+                >
+
+                <div class="note">
+                                  </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- PDF -->
+        <!-- ============================= -->
+
+        <section class="card">
+
+            <h2>📄 Tài liệu PDF</h2>
+
+            <div class="pdf-box">
+
+                <iframe
+                    src="Lab05_Ex1.1.pdf"
+                    title="Tài liệu PDF">
+                </iframe>
+
+                <div class="note">
+                  
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- VIDEO YOUTUBE -->
+        <!-- ============================= -->
+
+        <section class="card">
+
+            <h2>🎬 Video về ngành Công nghệ</h2>
+
+            <p style="margin-bottom: 20px;">
+                Video dưới đây giới thiệu những nội dung liên quan đến
+                công nghệ và xu hướng phát triển trong thời đại số.
+            </p>
+
+            <div class="video-container">
+
+               
+                <iframe
+                    src="https://www.youtube.com/embed/J9aAHxA10WE"
+                    title="Video về ngành Công nghệ"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="note">
+                           </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- NGUỒN -->
+        <!-- ============================= -->
+
+        <section class="card">
+
+            <h2>📚 Nguồn tham khảo</h2>
+
+            <ul class="source-list">
+
+                <li>
+                    <strong>Nguồn video:</strong>
+                    YouTube
+                    <br>
+                    <a
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.youtube.com/
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Nguồn công nghệ:</strong>
+                    Google for Developers – YouTube IFrame Player API
+                    <br>
+                    <a
+                        href="https://developers.google.com/youtube/iframe_api_reference"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Google for Developers
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Nguồn AI:</strong>
+                    OpenAI – ChatGPT
+                    <br>
+                    <a
+                        href="https://chatgpt.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        ChatGPT
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Nguồn hình ảnh/PDF:</strong>
+                    Ghi rõ tên tác giả hoặc website nơi bạn lấy tài liệu.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- GHI CHÚ BẢN QUYỀN -->
+        <!-- ============================= -->
+
+        <section class="card">
+
+            <h2>©️ Bản quyền & ghi chú</h2>
+
+            <p>
+                Nội dung trang web được thực hiện phục vụ mục đích
+                học tập và giới thiệu cá nhân.
+            </p>
+
+            <br>
+
+            <p>
+                Các hình ảnh, tài liệu, video và nội dung của bên thứ ba
+                thuộc quyền sở hữu của tác giả/chủ sở hữu tương ứng.
+                Vui lòng ghi rõ nguồn khi sử dụng lại.
+            </p>
+
+            <br>
+
+            <p>
+                Phần mã HTML và nội dung hỗ trợ xây dựng trang web
+                có sử dụng sự hỗ trợ của <strong>AI – ChatGPT (OpenAI)</strong>.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Phước Anh – MSSV B2605328
+        </p>
+
+        <p>
+            Ngành Truyền thông đa phương tiện – Khóa 52
+        </p>
+
+        <p>
+            Thiết kế với sự hỗ trợ của AI – ChatGPT (OpenAI)
+        </p>
+
+    </footer>
+
+</body>
+</html>
